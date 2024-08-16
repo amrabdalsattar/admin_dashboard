@@ -19,14 +19,39 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   final String title;
+
   const MyHomePage({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title),),
-      body: Center(),
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Column(
+        children: [
+          Flexible(
+            child: Container(
+              /// if there is area can contains the 400 px the height will be 400,
+              /// else the height will change to be flexible
+              height: 400,
+              color: Colors.cyan,
+            ),
+          ),
+          Container(
+            height: 200,
+            color: Colors.white,
+          ),
+          Container(
+            height: 200,
+            color: Colors.green,
+          ),
+          Container(
+            height: 300,
+            color: Colors.yellow,
+          ),
+        ],
+      ),
     );
   }
 }
-
