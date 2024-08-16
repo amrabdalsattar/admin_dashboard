@@ -25,7 +25,28 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(title),),
-      body: Center(),
+      body: Column(
+        children: [
+          Expanded(
+            flex: 2,
+            child: Container(
+              color: Colors.white,
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.green,
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.yellow,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
