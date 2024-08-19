@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/mobile_layout.dart';
-import 'package:test_app/widgets/custom_drawer.dart';
+import 'package:test_app/home_view_body.dart';
+import 'package:test_app/widgets/drawer/custom_drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,7 +44,7 @@ class _TestAppState extends State<TestApp> {
         ),
         iconTheme: const IconThemeData(color: Colors.white),
       ),
-      body: const MobileLayout(),
+      body: const HomeViewBody(),
     );
   }
 }

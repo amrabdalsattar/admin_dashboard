@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/widgets/grid_item.dart';
 
 class CustomGridView extends StatelessWidget {
   const CustomGridView({super.key});
@@ -12,10 +13,6 @@ class CustomGridView extends StatelessWidget {
             mainAxisSpacing: 16,
             childAspectRatio: 1,
             crossAxisSpacing: 16),
-        itemBuilder: (context, index) => Container(
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color: const Color(0xFFB4B4B4)),
-            ));
+        itemBuilder: (context, index) => const GridItem());
   }
 }

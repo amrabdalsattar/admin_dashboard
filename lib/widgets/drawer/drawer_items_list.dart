@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:test_app/models/drawer_option_model.dart';
-import 'package:test_app/widgets/drawer_option_item.dart';
+import 'package:test_app/widgets/drawer/drawer_option_item.dart';
 
 class DrawerItemsList extends StatelessWidget {
   const DrawerItemsList({
