@@ -15,6 +15,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Drawer(
+        elevation: 0,
         backgroundColor: const Color(0xffDBDBDB),
         child: ListView(
           children: const [

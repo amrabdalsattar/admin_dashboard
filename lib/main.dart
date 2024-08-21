@@ -34,17 +34,23 @@ class _TestAppState extends State<TestApp> {
     return Scaffold(
       key: scaffoldKey,
       drawer: const CustomDrawer(),
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        leading: IconButton(
-          onPressed: () {
-            scaffoldKey.currentState?.openDrawer();
-          },
-          icon: const Icon(Icons.menu),
-        ),
-        iconTheme: const IconThemeData(color: Colors.white),
-      ),
+      appBar: buildAppBar(context),
       body: const HomeViewBody(),
     );
+  }
+
+  AppBar? buildAppBar(BuildContext context) {
+    return MediaQuery.sizeOf(context).width <= 940
+        ? AppBar(
+            backgroundColor: Colors.black,
+            leading: IconButton(
+              onPressed: () {
+                scaffoldKey.currentState?.openDrawer();
+              },
+              icon: const Icon(Icons.menu),
+            ),
+            iconTheme: const IconThemeData(color: Colors.white),
+          )
+        : null;
   }
 }

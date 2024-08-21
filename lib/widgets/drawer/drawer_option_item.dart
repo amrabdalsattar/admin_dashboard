@@ -13,7 +13,10 @@ class DrawerOption extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
       child: ListTile(
         leading: Icon(drawerOptionModel.icon, color: const Color(0xff727073),),
-        title: Text(drawerOptionModel.title),
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: Alignment.centerLeft,
+          child: Text(drawerOptionModel.title)),
       
       ),
     );

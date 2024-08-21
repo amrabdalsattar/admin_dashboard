@@ -7,21 +7,18 @@ class TabletLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 10),
-      color: const Color(0xffDBDBDB),
-      child: const CustomScrollView(
-        physics: BouncingScrollPhysics(),
-        slivers: [
-          CustomTabletList(),
-          SliverToBoxAdapter(
-            child: SizedBox(
-              height: 20,
-            ),
+    return const CustomScrollView(
+      physics: BouncingScrollPhysics(),
+      slivers: [
+        CustomTabletList(),
+        SliverToBoxAdapter(
+          child: SizedBox(
+            height: 20,
           ),
-          CustomListView()
-        ],
-      ),
+        ),
+        CustomListView()
+      ],
     );
   }
 }
+
