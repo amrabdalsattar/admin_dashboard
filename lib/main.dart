@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/responsive_text_functions.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Test App',
-      home: MyHomePage(title: 'Test App'),
+      home: MyHomePage(title: 'Responsive Text'),
     );
   }
 }
@@ -24,9 +25,23 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(title),),
-      body: Center(),
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            "Text widget",
+            style: TextStyle(
+                fontSize: getResponsiveFontSize(fontSize: 16, context)),
+          ),
+           Text(
+              "This is bodyy text. It should  be responsive to the screen size",
+              style: TextStyle(
+                  fontSize: getResponsiveFontSize(fontSize: 16, context))),
+        ],
+      ),
     );
   }
 }
-
