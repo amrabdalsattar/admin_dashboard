@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/core/utils/app_colors.dart';
 import 'package:test_app/home_page.dart';
 
 void main() {
@@ -11,10 +12,11 @@ class AdminDashboard extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Admin Dashboard',
-      home: HomePage(),
+      theme: ThemeData(scaffoldBackgroundColor: AppColors.backgroundColor),
+      home: const HomePage(),
     );
   }
 }
