@@ -4,7 +4,7 @@ class FinancialOperationModel {
   final String date;
   final String cash;
 
-  FinancialOperationModel(
+  const FinancialOperationModel(
       {required this.icon,
       required this.type,
       required this.date,

@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/core/utils/app_images.dart';
-import 'package:test_app/models/financial_operation_model.dart';
+import 'package:test_app/features/all_expenses_sction/financial_operation_list.dart';
 
+import '../../core/utils/app_colors.dart';
 import 'all_expenses_header.dart';
-import 'financial_operation_widget.dart';
 
 class AllExpensesSection extends StatelessWidget {
   const AllExpensesSection({super.key});
@@ -13,28 +12,16 @@ class AllExpensesSection extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: AppColors.white,
         borderRadius: BorderRadius.circular(12),
       ),
-      child: Column(
+      child: const Column(
         children: [
-          const AllExpensesHeader(),
-          const SizedBox(
+          AllExpensesHeader(),
+          SizedBox(
             height: 16,
           ),
-          Expanded(
-            child: Row(
-              children: [
-                FinancialOperationWidget(
-                  operationModel: FinancialOperationModel(
-                      cash: r'$20,511',
-                      date: "April 2024",
-                      icon: AppImages.income,
-                      type: "Income"),
-                ),
-              ],
-            ),
-          ),
+          FinancialOperationList(),
         ],
       ),
     );
