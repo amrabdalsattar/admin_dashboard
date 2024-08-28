@@ -1,23 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:test_app/features/all_expenses_sction/financial_operation_list.dart';
-
-import '../../core/utils/app_colors.dart';
-import 'all_expenses_header.dart';
+import 'package:test_app/features/shared_components/custom_background_container.dart';
+import 'package:test_app/features/shared_components/period_drop_down.dart';
+import 'package:test_app/features/shared_components/section_header.dart';
 
 class AllExpensesSection extends StatelessWidget {
   const AllExpensesSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: AppColors.white,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: const Column(
+    return const CustomBackgroundContainer(
+      child: Column(
         children: [
-          AllExpensesHeader(),
+          SectionHeader(title: "All Expenese", postFixWidget: PeriodDropDown()),
           SizedBox(
             height: 16,
           ),

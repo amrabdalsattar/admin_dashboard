@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../core/utils/app_colors.dart';
 import '../../core/utils/app_styles.dart';
-import '../shared_components/custom_arrow.dart';
+import 'custom_arrow.dart';
 
 class PeriodDropDown extends StatelessWidget {
   const PeriodDropDown({

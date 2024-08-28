@@ -8,4 +8,5 @@ abstract class AppColors {
   static const Color liteGrey = Color(0xffFAFAFA);
   static const Color bordersColor = Color(0xffF1F1F1);
   static const Color white = Colors.white;
+  static const Color transparent = Colors.transparent;
 }

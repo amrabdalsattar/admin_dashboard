@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:test_app/core/utils/app_colors.dart';
-import 'package:test_app/core/utils/app_images.dart';
+
+import '../../core/utils/app_colors.dart';
+import '../../core/utils/app_images.dart';
+
 
 class FinancialOpearionHeader extends StatelessWidget {
   final String icon;
@@ -18,16 +20,21 @@ class FinancialOpearionHeader extends StatelessWidget {
             padding: const EdgeInsets.all(14),
             decoration: ShapeDecoration(
                 shape: const OvalBorder(),
-                color: isActive ? Colors.white.withOpacity(0.10000000149011612) : AppColors.liteGrey),
+                color: isActive
+                    ? Colors.white.withOpacity(0.10000000149011612)
+                    : AppColors.liteGrey),
             child: SvgPicture.asset(
               icon,
               colorFilter: ColorFilter.mode(
                   isActive ? AppColors.white : AppColors.secondaryColor,
                   BlendMode.srcIn),
             )),
-        SvgPicture.asset(AppImages.arrow, colorFilter: ColorFilter.mode(
-                  isActive ? AppColors.white : AppColors.primaryColor,
-                  BlendMode.srcIn),),
+        SvgPicture.asset(
+          AppImages.arrow,
+          colorFilter: ColorFilter.mode(
+              isActive ? AppColors.white : AppColors.primaryColor,
+              BlendMode.srcIn),
+        ),
       ],
     );
   }

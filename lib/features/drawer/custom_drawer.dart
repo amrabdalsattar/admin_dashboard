@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/core/utils/app_images.dart';
-import 'package:test_app/features/drawer/inactive_drawer_item.dart';
-import 'package:test_app/models/drawer_item_model.dart';
 
-import '../../core/constants.dart';
+
 import '../../core/utils/app_colors.dart';
+import '../../core/utils/app_images.dart';
+import '../../models/drawer_item_model.dart';
+import '../../models/user_info_model.dart';
 import '../shared_components/user_info_list_tile.dart';
 import 'dawer_items_list_view.dart';
+import 'inactive_drawer_item.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -18,7 +19,12 @@ class CustomDrawer extends StatelessWidget {
       color: AppColors.white,
       child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(child: UserInfoListTile(user: Constants.users[0])),
+          SliverToBoxAdapter(
+              child: UserInfoListTile(
+                  user: UserInfoModel(
+                      avatar: AppImages.avatars[0],
+                      name: "Amr Abdelsattar",
+                      email: "amrmmohamed00@gmail.com "))),
           const SliverToBoxAdapter(child: SizedBox(height: 8)),
           const DrawerItemsListView(),
           const SliverFillRemaining(

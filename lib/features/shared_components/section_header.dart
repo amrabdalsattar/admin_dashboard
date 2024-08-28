@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 
 import '../../core/utils/app_styles.dart';
-import 'period_drop_down.dart';
 
-class AllExpensesHeader extends StatelessWidget {
-  const AllExpensesHeader({
-    super.key,
-  });
+class SectionHeader extends StatelessWidget {
+  final String title;
+  final Widget postFixWidget;
+  const SectionHeader({super.key, required this.title, required this.postFixWidget});
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          "All Expenses",
+          title,
           style: AppStyles.styleSemiBold20,
         ),
-        PeriodDropDown()
+        postFixWidget
       ],
     );
   }
