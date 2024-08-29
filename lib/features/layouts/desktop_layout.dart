@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/features/my_card/custom_dot_indicator.dart';
 
-
-import '../all_expenses_sction/all_expenses_section.dart';
 import '../drawer/custom_drawer.dart';
-import '../quick_invoice_section/quick_invoice_section.dart';
-
+import '../my_card/my_card_section.dart';
+import '../shared_components/all_expenses_and_quick_invoice_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -15,17 +14,23 @@ class DesktopLayout extends StatelessWidget {
       child: Row(
         children: [
           Expanded(child: CustomDrawer()),
-          SizedBox(width: 32,),
+          SizedBox(
+            width: 32,
+          ),
           Expanded(
             flex: 2,
-            child: Column(
+            child: AllExpensesAndQuickInvoiceSection(),
+          ),
+          SizedBox(
+            width: 24,
+          ),
+          Expanded(
+              child: Column(
             children: [
-              SizedBox(height: 40,),
-              AllExpensesSection(),
-              SizedBox(height: 24,),
-              QuickInvoiceSection(),
+              MyCardSection(),
+              
             ],
-          )),
+          ))
         ],
       ),
     );

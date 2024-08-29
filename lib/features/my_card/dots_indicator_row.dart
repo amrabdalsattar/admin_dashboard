@@ -1,0 +1,14 @@
+import 'package:flutter/material.dart';
+import 'package:test_app/features/my_card/custom_dot_indicator.dart';
+
+class DotsIndicatorRow extends StatelessWidget {
+  final int currentPageIndex;
+  const DotsIndicatorRow({super.key, required this.currentPageIndex});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: List.generate(3, (index)=> CustomDotIndicator(isActive: index == currentPageIndex)),
+    );
+  }
+}

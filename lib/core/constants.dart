@@ -1,5 +1,6 @@
 import '../models/drawer_item_model.dart';
 import '../models/financial_operation_model.dart';
+import '../models/transaction_history_item_model.dart';
 import '../models/user_info_model.dart';
 import 'utils/app_images.dart';
 
@@ -27,6 +28,7 @@ abstract class Constants {
     DrawerItemModel(iconPath: AppImages.walletAccount, title: "Wallet Account"),
     DrawerItemModel(iconPath: AppImages.myInvestments, title: "My Investments")
   ];
+
   static const List<FinancialOperationModel> financialOperationModels = [
     FinancialOperationModel(
         cash: "20,129",
@@ -43,5 +45,23 @@ abstract class Constants {
         date: "April 2024",
         icon: AppImages.expenses,
         type: "Expenses")
+  ];
+
+  static const List<TransactionHistoryItemModel> transaction = [
+    TransactionHistoryItemModel(
+        title: 'Cash Withdrawal',
+        date: '13 Apr, 2022',
+        cash: '20,129',
+        isWithdrawal: true),
+    TransactionHistoryItemModel(
+        title: 'Landing Page project',
+        date: '13 Apr, 2022 at 3:30 PM',
+        cash: '2,000',
+        isWithdrawal: false),
+    TransactionHistoryItemModel(
+        title: 'Juni Mobile App project',
+        date: '13 Apr, 2022 at 3:30 PM',
+        cash: '20,129',
+        isWithdrawal: false),
   ];
 }

@@ -12,8 +12,9 @@ class AppImages {
 
   static const String balance = "assets/images/balance.svg";
 
-  static const String cardBackground =
-      "assets/images/card_background.svg";
+  static const String cardBackground = "assets/images/card_background.png";
+
+  static const String galleryIcon = "assets/images/gallery.svg";
 
   static const String dashboard = "assets/images/dashboard.svg";
 
@@ -25,8 +26,7 @@ class AppImages {
 
   static const String myInvestments = "assets/images/my_investments.svg";
 
-  static const String myTransactions =
-      "assets/images/my_transactions.svg";
+  static const String myTransactions = "assets/images/my_transactions.svg";
 
   static const String setting = "assets/images/setting.svg";
 
