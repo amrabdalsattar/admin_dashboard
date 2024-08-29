@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/features/drawer/inactive_drawer_item.dart';
-import 'package:test_app/models/drawer_item_model.dart';
 
+
+import '../../models/drawer_item_model.dart';
 import 'active_drawer_item.dart';
+import 'inactive_drawer_item.dart';
 
 class DarwerItemWidget extends StatelessWidget {
   final DrawerItemModel model;

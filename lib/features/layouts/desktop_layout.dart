@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/features/my_card/custom_dot_indicator.dart';
 
 import '../drawer/custom_drawer.dart';
 import '../my_card/my_card_section.dart';
@@ -28,7 +27,6 @@ class DesktopLayout extends StatelessWidget {
               child: Column(
             children: [
               MyCardSection(),
-              
             ],
           ))
         ],

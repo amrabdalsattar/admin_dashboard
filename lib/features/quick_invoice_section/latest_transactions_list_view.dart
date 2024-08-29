@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/core/constants.dart';
-import 'package:test_app/features/shared_components/user_info_list_tile.dart';
+
+import '../../core/constants.dart';
+import '../shared_components/user_info_list_tile.dart';
+
 
 class LatestTransactionsListView extends StatelessWidget {
   const LatestTransactionsListView({super.key});

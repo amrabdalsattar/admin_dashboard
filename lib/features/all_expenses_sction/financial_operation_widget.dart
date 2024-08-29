@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/features/all_expenses_sction/active_financial_operation_widget.dart';
-import 'package:test_app/features/all_expenses_sction/inactive_financial_operation_widget.dart';
-import 'package:test_app/models/financial_operation_model.dart';
+
+import '../../models/financial_operation_model.dart';
+import 'active_financial_operation_widget.dart';
+import 'inactive_financial_operation_widget.dart';
+
 
 class FinancialOperationWidget extends StatelessWidget {
   final FinancialOperationModel operationModel;

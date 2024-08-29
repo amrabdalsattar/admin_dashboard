@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/core/utils/app_styles.dart';
 
+import '../../core/utils/app_styles.dart';
 import 'latest_transactions_list_view.dart';
 
 class LatestTransactionWidget extends StatelessWidget {

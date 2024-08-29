@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/features/my_card/card_page_view.dart';
-import 'package:test_app/features/my_card/dots_indicator_row.dart';
-import 'package:test_app/features/shared_components/custom_background_container.dart';
-import 'package:test_app/features/shared_components/section_header.dart';
+
+import '../shared_components/custom_background_container.dart';
+import '../shared_components/section_header.dart';
+import 'card_page_view.dart';
+import 'dots_indicator_row.dart';
+
 
 class MyCardSection extends StatefulWidget {
   const MyCardSection({super.key});
