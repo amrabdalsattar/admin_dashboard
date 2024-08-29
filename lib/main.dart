@@ -1,32 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/core/utils/app_colors.dart';
+import 'package:test_app/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const AdminDashboard());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class AdminDashboard extends StatelessWidget {
+  const AdminDashboard({super.key});
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Test App',
-      home: MyHomePage(title: 'Test App'),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Admin Dashboard',
+      theme: ThemeData(scaffoldBackgroundColor: AppColors.backgroundColor),
+      home: const HomePage(),
     );
   }
 }
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  const MyHomePage({super.key, required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title),),
-      body: Center(),
-    );
-  }
-}
-
