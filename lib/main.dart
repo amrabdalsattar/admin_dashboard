@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/core/utils/app_colors.dart';
-import 'package:test_app/home_page.dart';
+
+import 'core/utils/app_colors.dart';
+import 'home_page.dart';
+
 
 void main() {
   runApp(const AdminDashboard());

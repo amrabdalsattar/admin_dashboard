@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/core/utils/app_colors.dart';
+
+import '../../core/utils/app_colors.dart';
+
 
 class CustomDotIndicator extends StatelessWidget {
   final bool isActive;

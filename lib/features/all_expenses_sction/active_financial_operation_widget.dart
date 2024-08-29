@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/models/financial_operation_model.dart';
+
 
 import '../../core/utils/app_colors.dart';
 import '../../core/utils/app_styles.dart';
+import '../../models/financial_operation_model.dart';
 import 'financial_opearion_header.dart';
 
 class ActiveFinancialOperationWidget extends StatelessWidget {

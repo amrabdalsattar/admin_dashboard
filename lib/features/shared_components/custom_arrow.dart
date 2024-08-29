@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:test_app/core/utils/app_images.dart';
+
+import '../../core/utils/app_images.dart';
+
 
 class CustomArrow extends StatelessWidget {
   final bool isDown;

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/core/utils/app_images.dart';
-import 'package:test_app/features/my_card/card_content.dart';
+
 
 import '../../core/utils/app_colors.dart';
+import '../../core/utils/app_images.dart';
+import 'card_content.dart';
 
 class CreditCardWidget extends StatelessWidget {
   const CreditCardWidget({super.key});
