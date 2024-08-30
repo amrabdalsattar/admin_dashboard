@@ -1,7 +1,11 @@
+
+
 import '../models/drawer_item_model.dart';
 import '../models/financial_operation_model.dart';
-import '../models/transaction_history_item_model.dart';
+import '../models/item_details_model.dart';
+import '../models/transaction_model.dart';
 import '../models/user_info_model.dart';
+import 'utils/app_colors.dart';
 import 'utils/app_images.dart';
 
 abstract class Constants {
@@ -47,21 +51,28 @@ abstract class Constants {
         type: "Expenses")
   ];
 
-  static const List<TransactionHistoryItemModel> transaction = [
-    TransactionHistoryItemModel(
+  static const List<TransactionModel> transaction = [
+    TransactionModel(
         title: 'Cash Withdrawal',
         date: '13 Apr, 2022',
         cash: '20,129',
         isWithdrawal: true),
-    TransactionHistoryItemModel(
+    TransactionModel(
         title: 'Landing Page project',
         date: '13 Apr, 2022 at 3:30 PM',
         cash: '2,000',
         isWithdrawal: false),
-    TransactionHistoryItemModel(
+    TransactionModel(
         title: 'Juni Mobile App project',
         date: '13 Apr, 2022 at 3:30 PM',
         cash: '20,129',
         isWithdrawal: false),
+  ];
+  
+  static const List<ItemDetailsModel> incomeDetails = [
+    ItemDetailsModel(title: 'Design service', percentage: '40%', color: AppColors.blue),
+    ItemDetailsModel(title: 'Design product', percentage: '25%', color: AppColors.secondaryColor),
+    ItemDetailsModel(title: 'Product royalti', percentage: '20%', color: AppColors.primaryColor),
+    ItemDetailsModel(title: 'Other', percentage: '15%', color: AppColors.offWhite),
   ];
 }
