@@ -13,7 +13,6 @@ class MyCardSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CustomBackgroundContainer(
         padding: 24,
-        isFirstInColumn: true,
         child: Column(
           children: [
             SectionHeader(title: 'My card'),

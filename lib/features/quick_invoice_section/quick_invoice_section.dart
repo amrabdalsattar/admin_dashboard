@@ -15,7 +15,7 @@ class QuickInvoiceSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomBackgroundContainer(
         padding: 24,
-        isFirstInColumn: false,
+
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

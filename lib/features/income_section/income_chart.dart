@@ -28,7 +28,7 @@ class _IncomeChartState extends State<IncomeChart> {
         },
       ),
       sectionsSpace: 0,
-      centerSpaceRadius: 40,
+
       startDegreeOffset: 50,
       sections: [
         PieChartSectionData(

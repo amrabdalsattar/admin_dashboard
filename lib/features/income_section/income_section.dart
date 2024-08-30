@@ -13,19 +13,17 @@ class IncomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomBackgroundContainer(
-      isFirstInColumn: false,
+
       child: Column(
         children: [
           SectionHeader(title: 'Income', postFixWidget: PeriodDropDown(),),
-          Expanded(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(child: IncomeChart()),
-               
-                Expanded( child: IncomeDetails()),
-              ],
-            ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(child: IncomeChart()),
+             
+              Expanded( child: IncomeDetails()),
+            ],
           )
         ],
       ),

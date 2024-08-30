@@ -12,7 +12,7 @@ class AllExpensesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const CustomBackgroundContainer(
-      isFirstInColumn: true,
+
       child: Column(
         children: [
           SectionHeader(title: "All Expenese", postFixWidget: PeriodDropDown()),
