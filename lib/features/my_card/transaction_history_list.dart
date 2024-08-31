@@ -10,21 +10,12 @@ class TransactionHistoryList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      itemBuilder: (context, index) => TransactionHistoryItem(
-          transactionModel: Constants.transaction[index]),
-      separatorBuilder: (context, index) {
-        if (index == Constants.transaction.length - 1) {
-          return const SizedBox();
-        } else {
-          return const SizedBox(
-            height: 12,
-          );
-        }
-      },
-      itemCount: Constants.transaction.length,
+    return Column(
+      children: Constants.transaction
+          .map((e) => Padding(
+            padding: const EdgeInsets.only(top: 12),
+            child: TransactionHistoryItem(transactionModel: e)))
+          .toList(),
     );
   }
 }

@@ -22,7 +22,7 @@ class TransactionHistory extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 20, bottom: 16),
+          padding: const EdgeInsets.only(top: 8, bottom: 16),
           child: Text(
             '13 April 2022',
             style: AppStyles.styleMedium16.copyWith(color: AppColors.grey),
