@@ -30,21 +30,21 @@ class ActiveFinancialOperationWidget extends StatelessWidget {
           ),
           Text(
             operationModel.type,
-            style: AppStyles.styleSemiBold16.copyWith(color: AppColors.white),
+            style: AppStyles.styleSemiBold16(context).copyWith(color: AppColors.white),
           ),
           const SizedBox(
             height: 8,
           ),
           Text(
             operationModel.date,
-            style: AppStyles.styleRegular14.copyWith(color: AppColors.liteGrey),
+            style: AppStyles.styleRegular14(context).copyWith(color: AppColors.liteGrey),
           ),
           const SizedBox(
             height: 16,
           ),
           Text(
             operationModel.cash,
-            style: AppStyles.styleSemiBold24.copyWith(color: AppColors.white),
+            style: AppStyles.styleSemiBold24(context).copyWith(color: AppColors.white),
           ),
         ],
       ),

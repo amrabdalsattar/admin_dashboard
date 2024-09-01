@@ -25,7 +25,7 @@ class CustomButton extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12))),
           child: Text(
             title,
-            style: AppStyles.styleSemiBold18.copyWith(color: textColor),
+            style: AppStyles.styleSemiBold18(context).copyWith(color: textColor),
           )),
     );
   }

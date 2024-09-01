@@ -30,7 +30,7 @@ class CustomDrawer extends StatelessWidget {
                   user: UserInfoModel(
                       avatar: AppImages.avatars[0],
                       name: "Amr Abdelsattar",
-                      email: "amrmmohamed00@gmail.com "))),
+                      email: "amrmmohamed00@gmail.com"))),
           const SliverToBoxAdapter(child: SizedBox(height: 8)),
           const DrawerItemsListView(),
           const SliverFillRemaining(

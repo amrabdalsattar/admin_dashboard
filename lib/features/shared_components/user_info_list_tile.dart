@@ -16,24 +16,29 @@ class UserInfoListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IntrinsicWidth(
-      child: SizedBox(
-        height: 75,
-        child: Card(
-            color: AppColors.liteGrey,
-            elevation: 0,
-            child: ListTile(
-                leading: SvgPicture.asset(
-                  user.avatar,
-                ),
-                title: Text(
+      child: Card(
+          color: AppColors.liteGrey,
+          elevation: 0,
+          child: ListTile(
+              leading: SvgPicture.asset(
+                user.avatar,
+              ),
+              title: FittedBox(
+                fit: BoxFit.scaleDown,
+                alignment: Alignment.centerLeft,
+                child: Text(
                   user.name,
-                  style: AppStyles.styleSemiBold16,
+                  style: AppStyles.styleSemiBold16(context),
                 ),
-                subtitle: Text(
+              ),
+              subtitle: FittedBox(
+              fit: BoxFit.scaleDown,
+                alignment: Alignment.centerLeft,
+                child: Text(
                   user.email,
-                  style: AppStyles.styleRegular12,
-                ))),
-      ),
+                  style: AppStyles.styleRegular12(context),
+                ),
+              ))),
     );
   }
 }

@@ -17,6 +17,6 @@ class InactiveDrawerItem extends StatelessWidget {
         title: FittedBox(
           fit: BoxFit.scaleDown,
           alignment: AlignmentDirectional.topStart,
-          child: Text(model.title, style: AppStyles.styleRegular16)));
+          child: Text(model.title, style: AppStyles.styleRegular16(context))));
   }
 }

@@ -17,7 +17,7 @@ class TransactionHistory extends StatelessWidget {
           title: 'Transaction History',
           postFixWidget: Text(
             'See all',
-            style: AppStyles.styleMedium16
+            style: AppStyles.styleMedium16(context)
                 .copyWith(color: AppColors.secondaryColor),
           ),
         ),
@@ -25,7 +25,7 @@ class TransactionHistory extends StatelessWidget {
           padding: const EdgeInsets.only(top: 8, bottom: 16),
           child: Text(
             '13 April 2022',
-            style: AppStyles.styleMedium16.copyWith(color: AppColors.grey),
+            style: AppStyles.styleMedium16(context).copyWith(color: AppColors.grey),
           ),
         ),
         const TransactionHistoryList(),

@@ -17,12 +17,12 @@ class PeriodDropDown extends StatelessWidget {
         border: Border.all(color: AppColors.bordersColor),
         borderRadius: BorderRadius.circular(12)
       ),
-      child: const Row(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text("Monthly", style: AppStyles.styleMedium16,),
-          SizedBox(width: 18,),
-          CustomArrow(isDown: true,)
+          Text("Monthly", style: AppStyles.styleMedium16(context),),
+          const SizedBox(width: 18,),
+          const CustomArrow(isDown: true,)
         ],
       ),
     );

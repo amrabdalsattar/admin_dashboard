@@ -20,11 +20,11 @@ class ItemDetails extends StatelessWidget {
       ),
       title: Text(
         itemDetailsModel.title,
-        style: AppStyles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
       trailing: Text(
         itemDetailsModel.percentage,
-        style: AppStyles.styleMedium16,
+        style: AppStyles.styleMedium16(context),
       ),
     );
   }

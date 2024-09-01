@@ -23,7 +23,7 @@ class _FinancialOperationListState extends State<FinancialOperationList> {
       return Expanded(
         child: Padding(
           padding: index == 1
-              ? const EdgeInsets.symmetric(horizontal: 12)
+              ? const EdgeInsets.symmetric(horizontal: 8)
               : EdgeInsets.zero,
           child: GestureDetector(
             onTap: () {

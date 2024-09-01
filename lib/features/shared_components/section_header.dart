@@ -14,7 +14,7 @@ class SectionHeader extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         postFixWidget ?? const SizedBox()
       ],
