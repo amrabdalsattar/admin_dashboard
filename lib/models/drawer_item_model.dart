@@ -1,6 +1,5 @@
 class DrawerItemModel {
-  final String iconPath;
-  final String title;
+  final String title, iconPath;
 
   const DrawerItemModel({required this.iconPath, required this.title});
 }

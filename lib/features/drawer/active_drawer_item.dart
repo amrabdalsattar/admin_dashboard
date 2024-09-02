@@ -21,7 +21,7 @@ class ActiveDrawerItem extends StatelessWidget {
       title: FittedBox(
         fit: BoxFit.scaleDown,
         alignment: AlignmentDirectional.topStart,
-        child: Text(model.title, style: AppStyles.styleBold16)),
+        child: Text(model.title, style: AppStyles.styleBold16(context))),
       trailing: Container(
         width: 3.27,
         height: MediaQuery.sizeOf(context).height,

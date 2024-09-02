@@ -1,10 +1,8 @@
-class TransactionHistoryItemModel {
-  final String title;
-  final String cash;
-  final String date;
+class TransactionModel {
+  final String title, cash, date;
   final bool isWithdrawal;
 
-  const TransactionHistoryItemModel(
+  const TransactionModel(
       {required this.title,
       required this.cash,
       required this.date,

@@ -3,23 +3,21 @@ import 'package:flutter/material.dart';
 import '../shared_components/custom_background_container.dart';
 import '../shared_components/period_drop_down.dart';
 import '../shared_components/section_header.dart';
-import 'financial_operation_list.dart';
+import 'income_body.dart';
 
-
-class AllExpensesSection extends StatelessWidget {
-  const AllExpensesSection({super.key});
+class IncomeSection extends StatelessWidget {
+  const IncomeSection({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const CustomBackgroundContainer(
-
       child: Column(
         children: [
-          SectionHeader(title: "All Expenese", postFixWidget: PeriodDropDown()),
-          SizedBox(
-            height: 16,
+          SectionHeader(
+            title: 'Income',
+            postFixWidget: PeriodDropDown(),
           ),
-          FinancialOperationList(),
+          IncomeBody()
         ],
       ),
     );

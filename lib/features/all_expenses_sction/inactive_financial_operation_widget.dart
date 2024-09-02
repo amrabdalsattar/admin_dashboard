@@ -28,23 +28,32 @@ class InactiveFinancialOperationWidget extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(
-            operationModel.type,
-            style: AppStyles.styleSemiBold16,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              operationModel.type,
+              style: AppStyles.styleSemiBold16(context),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            operationModel.date,
-            style: AppStyles.styleRegular14,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              operationModel.date,
+              style: AppStyles.styleRegular14(context),
+            ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            operationModel.cash,
-            style: AppStyles.styleSemiBold24,
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              operationModel.cash,
+              style: AppStyles.styleSemiBold24(context),
+            ),
           ),
         ],
       ),

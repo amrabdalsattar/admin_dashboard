@@ -4,8 +4,8 @@ import '../../core/utils/app_styles.dart';
 
 class SectionHeader extends StatelessWidget {
   final String title;
-  final Widget postFixWidget;
-  const SectionHeader({super.key, required this.title, required this.postFixWidget});
+  final Widget? postFixWidget;
+  const SectionHeader({super.key, required this.title, this.postFixWidget});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +14,9 @@ class SectionHeader extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
-        postFixWidget
+        postFixWidget ?? const SizedBox()
       ],
     );
   }

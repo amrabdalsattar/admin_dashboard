@@ -16,6 +16,7 @@ class ActiveFinancialOperationWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: BoxDecoration(
+         border: Border.all(color: AppColors.secondaryColor),
           color: AppColors.secondaryColor,
           borderRadius: BorderRadius.circular(12)),
       child: Column(
@@ -28,23 +29,32 @@ class ActiveFinancialOperationWidget extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(
-            operationModel.type,
-            style: AppStyles.styleSemiBold16.copyWith(color: AppColors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              operationModel.type,
+              style: AppStyles.styleSemiBold16(context).copyWith(color: AppColors.white),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            operationModel.date,
-            style: AppStyles.styleRegular14.copyWith(color: AppColors.liteGrey),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              operationModel.date,
+              style: AppStyles.styleRegular14(context).copyWith(color: AppColors.liteGrey),
+            ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            operationModel.cash,
-            style: AppStyles.styleSemiBold24.copyWith(color: AppColors.white),
+          FittedBox(
+            fit: BoxFit.scaleDown,  
+            child: Text(
+              operationModel.cash,
+              style: AppStyles.styleSemiBold24(context).copyWith(color: AppColors.white),
+            ),
           ),
         ],
       ),

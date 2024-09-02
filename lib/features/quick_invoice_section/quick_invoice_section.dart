@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/features/shared_components/custom_divider.dart';
 
 import '../../core/utils/app_colors.dart';
 import '../shared_components/custom_background_container.dart';
@@ -14,7 +15,7 @@ class QuickInvoiceSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomBackgroundContainer(
         padding: 24,
-        isFirstInColumn: false,
+
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -33,10 +34,7 @@ class QuickInvoiceSection extends StatelessWidget {
               height: 24,
             ),
             const LatestTransactionWidget(),
-            const Divider(
-              color: AppColors.bordersColor,
-              height: 48,
-            ),
+            const CustomDivider(height: 48),
             const QuickInvoiceForm(),
             const SizedBox(
               height: 24,
