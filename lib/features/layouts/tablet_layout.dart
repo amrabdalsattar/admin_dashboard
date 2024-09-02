@@ -14,7 +14,8 @@ class TabletLayout extends StatelessWidget {
         Expanded(
             flex: 2,
             child: Padding(
-                padding: EdgeInsets.only(top: 40), child: MobileLayout())),
+                padding: EdgeInsets.only(right: 32, left: 32),
+                child: MobileLayout())),
       ],
     );
   }

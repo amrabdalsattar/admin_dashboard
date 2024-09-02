@@ -8,17 +8,14 @@ class MobileLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 32),
-      child: ListView(
-        children: const [
-          AllExpensesAndQuickInvoiceSection(),
-          SizedBox(
-            height: 24,
-          ),
-          CardAndIncomeSections()
-        ],
-      ),
+    return ListView(
+      children: const [
+        AllExpensesAndQuickInvoiceSection(),
+        SizedBox(
+          height: 24,
+        ),
+        CardAndIncomeSections()
+      ],
     );
   }
 }

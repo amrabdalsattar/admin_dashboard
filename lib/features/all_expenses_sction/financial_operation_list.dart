@@ -15,28 +15,50 @@ class _FinancialOperationListState extends State<FinancialOperationList> {
   @override
   Widget build(BuildContext context) {
     return Row(
-        children:
-            Constants.financialOperationModels.asMap().entries.map((model) {
-      int index = model.key;
-      var item = model.value;
-
-      return Expanded(
-        child: Padding(
-          padding: index == 1
-              ? const EdgeInsets.symmetric(horizontal: 8)
-              : EdgeInsets.zero,
+      children: [
+        Expanded(
           child: GestureDetector(
             onTap: () {
-              currentIndex = index;
+              currentIndex = 0;
               setState(() {});
             },
             child: FinancialOperationWidget(
-              operationModel: item,
-              isActive: index == currentIndex,
+              operationModel: Constants.financialOperationModels[0],
+              isActive: 0 == currentIndex,
             ),
           ),
         ),
-      );
-    }).toList());
+        const SizedBox(
+          width: 12,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              currentIndex = 1;
+              setState(() {});
+            },
+            child: FinancialOperationWidget(
+              operationModel: Constants.financialOperationModels[1],
+              isActive: 1 == currentIndex,
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 12,
+        ),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              currentIndex = 2;
+              setState(() {});
+            },
+            child: FinancialOperationWidget(
+              operationModel: Constants.financialOperationModels[2],
+              isActive: 2 == currentIndex,
+            ),
+          ),
+        ),
+      ],
+    );
   }
 }

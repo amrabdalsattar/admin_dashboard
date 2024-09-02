@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:test_app/core/utils/size_config.dart';
 
 import '../../core/utils/app_colors.dart';
 import '../../core/utils/app_images.dart';
+import '../../core/utils/size_config.dart';
 import 'card_content.dart';
 import 'desktop_card_content.dart';
 

@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       key: scaffoldKey,
       drawer: SizedBox(
-          width: SizeConfig.width * 0.6,
+          width: SizeConfig.width * 0.7,
           child: const CustomDrawer(
             isMobileDrawer: true,
           )),

@@ -23,31 +23,33 @@ class CustomDrawer extends StatelessWidget {
                   topRight: Radius.circular(12),
                   bottomRight: Radius.circular(12))
               : null),
-      child: CustomScrollView(
-        slivers: [
-          SliverToBoxAdapter(
-              child: UserInfoListTile(
-                  user: UserInfoModel(
-                      avatar: AppImages.avatars[0],
-                      name: "Amr Abdelsattar",
-                      email: "amrmmohamed00@gmail.com"))),
-          const SliverToBoxAdapter(child: SizedBox(height: 8)),
-          const DrawerItemsListView(),
-          const SliverFillRemaining(
-            hasScrollBody: false,
-            child: Column(
-              children: [
-                Spacer(),
-                InactiveDrawerItem(
-                    model: DrawerItemModel(
-                        iconPath: AppImages.setting, title: "Setting system")),
-                InactiveDrawerItem(
-                    model: DrawerItemModel(
-                        iconPath: AppImages.logout, title: "Logout account")),
-              ],
-            ),
-          )
-        ],
+      child: SafeArea(
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(
+                child: UserInfoListTile(
+                    user: UserInfoModel(
+                        avatar: AppImages.avatars[0],
+                        name: "Amr Abdelsattar",
+                        email: "amrmmohamed00@gmail.com"))),
+            const SliverToBoxAdapter(child: SizedBox(height: 8)),
+            const DrawerItemsListView(),
+            const SliverFillRemaining(
+              hasScrollBody: false,
+              child: Column(
+                children: [
+                  Spacer(),
+                  InactiveDrawerItem(
+                      model: DrawerItemModel(
+                          iconPath: AppImages.setting, title: "Setting system")),
+                  InactiveDrawerItem(
+                      model: DrawerItemModel(
+                          iconPath: AppImages.logout, title: "Logout account")),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
